@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-O-Matic</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+    <!--============================Header Section==========================================-->
+    <header>
+        <h1 class="page-title">Task-O-Matic</h1>
+        <p>
+            Click the button below to add a new task!
+        </p>
+        <form id="task-form">
+            <!--Holds input values for new task form-->
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter Task Name" />
+            </div>
+            <!--Create drown down list for task type selection-->
+            <div class="form-group">
+                <select name="task-type" class="select-dropdown">
+                    <option value="" disabled selected>Pick a task type</option>
+                    <option value="Central-Grading">Central Grading</option>
+                    <option value="TA">Teaching Assistant</option>
+                    <option value="Personal">Personal Projects</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn" id="save-task">Add Task</button>
+            </div>
+        </form>
+    </header>
+    <!--============================Header Section Ends===================================-->
+
+
+    <!--============================Main Content==========================================-->
+
+    <main class="page-content">
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks To Do</h2>
+            <ul class="task-list" id="tasks-to-do">
+                <li class="task-item"></li>
+            </ul>
+        </section>
+    </main>
+    <!--============================Header Section Ends====================================-->
+
+
+    <!--============================Footer Section==========================================-->
+
+    <footer>
+        &copy;2020 by Task-O-Matic
+    </footer>
+
+    <!--============================Footer Section Ends=====================================-->
+
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
